@@ -1,5 +1,6 @@
 # git-flow_practise
 git 특강에서 배운 브랜치 전략인 git-flow 연습하기
+sourcetree를 이용해서~~~
 
 ### sourcetree에서 git flow 설정하기
 
@@ -15,7 +16,7 @@ git 특강에서 배운 브랜치 전략인 git-flow 연습하기
 
 1) 깃플로우를 클릭하고 '새 기능 시작하기'를 클릭. 이때 현재 develop 브랜치 안에 있는지 확인하기.<br/>
 2) feature 이름은 이슈 번호와 간략한 설명으로 정하기.<br/>
-3) 기능을 구현했다면 'fixed #<이슈번호>'를 포함해 커밋 메시지를 작성하기.<br/>
+3) 기능을 구현했다면 'fixed #<이슈번호>'를 포함해 커밋 메시지를 작성하기(이슈를 만들었다면...!).<br/>
 해당 이슈와 관련된 커밋이 무엇인지 확인하기 위함.. 기본 브랜치인 develop과 병합될 때 이슈가 자동으로 닫힘.<br/>
 4) 구현한 기능에 대한 코드가 있는 feature/-------- 브랜치를 선택하고 push.<br/>
 5) 기능 구현에 성공했다면 기능 브랜치를 develop으로 병합. 그 방법은 다음과 같음.<br/>
@@ -45,17 +46,19 @@ git 특강에서 배운 브랜치 전략인 git-flow 연습하기
 
 ### 프로젝트를 같이 만들 사람 추가하기
 
-1) 해당 repository의 settings를 클릭<br/>
-2) 왼쪽 메뉴에서 collaborators를 클릭<br/>
-3) github 아이디를 이용해 협력자를 검색해서 추가<br/>
+1) 해당 repository의 'settings'를 클릭<br/>
+2) 왼쪽 메뉴에서 'manage access'를 클릭<br/>
+3) 'Invate a collaborator' 클릭 후 github 아이디를 이용해 협력자를 검색해서 추가<br/>
 
 
 ### 프로젝트에 참여하기
 
-1) 초대받은? 프로젝트의 repository를 클론<br/>
+0) 깃허브를 가입한 메일로 프로젝트 초대장?이 오면 수락
+1) 초대받은? 프로젝트의 repository를 sourcetree를 이용해 클론<br/>
 2) git-flow 설정하기<br/>
-   이때 develop과 master 브랜치가 모두 로컬에 있어야 가능..<br/>
-
+   repository에 다른 브랜치가 있는 상태에서 클론하더라도 git-flow 설정을 해야 함.<br/>
+   git-flow 설정을 하지 않으면 master 브랜치만 있기 때문<br/>
+   
 
 ### milestone(마일스톤) 설정하기
 프로젝트 진행 상황을 확인하기 위해 사용하는 듯...<br/>
@@ -103,5 +106,3 @@ feature = feature/<br/>
 hotfix = hotfix/<br/>
 release = release/<br/>
 이렇게 고쳐주면 된다.<br/>
-
-![image](.png)
